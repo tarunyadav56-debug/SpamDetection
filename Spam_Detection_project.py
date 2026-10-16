@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 
-model=joblib.load('Spam_model.pkl')
+model=joblib.load('spam_model.pkl')
 
 st.set_page_config(layout='wide')
 
