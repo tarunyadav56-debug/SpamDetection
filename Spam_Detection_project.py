@@ -40,7 +40,7 @@ if st.button("Predict", key="b1"):
     pred = model.predict([sample_review])
     prob = model.predict_proba([sample_review])
     if pred[0] == 1:
-        st.error(f"🐞 Spam detected!" ({prob[0][0]:.2f})")
+        st.error(f"🐞 Spam detected! ({prob[0][0]:.2f})")
     else:
         st.success(f"No Spam Email ({prob[0][1]:.2f})")
         st.snow()
@@ -50,7 +50,7 @@ if st.button("Predict second", key="b2"):
     pred = model.predict([sample_review2])
     prob = model.predict_proba([sample_review2])
     if pred[0] == 1:
-        st.error(f"🐞 Spam detected!" ({prob[0][0]:.2f})")
+        st.error(f"🐞 Spam detected! ({prob[0][0]:.2f})")
     else:
         st.success(f"No Spam Email ({prob[0][1]:.2f})")
         st.snow()
